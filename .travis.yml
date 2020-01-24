@@ -15,6 +15,8 @@ addons:
             - python-pip
             - python-virtualenv
             - python3-dev
+            - protobuf-compiler
+            - libopencv-dev
 
 language: cpp
 
@@ -39,7 +41,8 @@ matrix:
           env: BUILD_TYPE="build-packager" PLATFORM="sensor"
         - compiler: gcc
           env: BUILD_TYPE="build-packager" PLATFORM="uwb-beacon"
-
+        - compiler: gcc
+          env: BUILD_TYPE="computer-vision"
 
 before_install:
     - git submodule update --init --recursive
