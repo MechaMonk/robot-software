@@ -16,6 +16,7 @@ addons:
             - python-virtualenv
             - python3-dev
             - protobuf-compiler
+            - libprotobuf-dev
             - libopencv-dev
 
 language: cpp
