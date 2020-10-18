@@ -60,10 +60,10 @@ case $BUILD_TYPE in
         ;;
 
     computer-vision)
-        mkdir -p computer-vision/build
+        mkdir -p build
         pushd computer-vision/build
         cmake ..
-        make all
+        make robot_tracking
         popd
         ;;
 
